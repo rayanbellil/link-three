@@ -11,7 +11,7 @@ body {
 
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: lighter;
+    font-weight: bolder;
     font-style: normal;
 
 }
@@ -32,6 +32,7 @@ body {
 
 .retngl-pege:hover {
     box-shadow: 0 4px 12px rgba(168, 245, 36, 0.687);
+    transition: 0.8s;
 }
 
 #photo-profile {
@@ -40,6 +41,12 @@ body {
     border: solid rgb(84, 70, 129) 3px;
     border-radius: 500px;
     background-position: center;
+}
+
+#photo-profile:hover {
+    border-color: violet;
+    box-shadow: 2px 2px 10px rgb(221, 163, 221);
+    transition: 0.8s;
 }
 
 #order-button {
@@ -55,11 +62,23 @@ h1 {
     padding: 5px;
 }
 
+h1:hover {
+    color: rgb(183, 218, 131);
+    transition: 0.8s;
+
+}
+
 h3 {
     color: hsl(75, 94%, 57%);
     margin: 5px;
     padding: 5px;
+    font-size: medium;
 
+}
+
+h2:hover {
+    color: rgb(183, 218, 131);
+    transition: 0.6s;
 }
 
 .item {
@@ -72,19 +91,18 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
 }
 
 .item:hover {
     box-shadow: 0 4px 12px rgba(168, 245, 36, 0.687);
-    background-color:greenyellow ;
-}
-
-.item>a {
-    text-decoration: none;
-    color: white;
-}
-.item>a:hover{
+    background-color: greenyellow;
     color: black;
+    cursor: pointer;
+
+
 }
 
 .text-pege {
@@ -93,4 +111,9 @@ h3 {
     align-items: center;
     margin: 0px;
     padding: 0px;
+
+}
+
+.text-pege:hover {
+    color: rgb(152, 203, 152);
 }
